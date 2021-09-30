@@ -18,19 +18,19 @@
                 <ul>
                     <li>
                         <label for="title_1">
-                            <input type="radio" id="title_1" name="title" value="K">
+                            <input type="radio" id="title_1" name="title" value="King">
                             King
                         </label>
                     </li>
                     <li>
                         <label for="title_2">
-                            <input type="radio" id="title_2" name="title" value="Q">
+                            <input type="radio" id="title_2" name="title" value="Queen">
                             Queen
                         </label>
                     </li>
                     <li>
                         <label for="title_3">
-                            <input type="radio" id="title_3" name="title" value="J">
+                            <input type="radio" id="title_3" name="title" value="Joker">
                             Joker
                         </label>
                     </li>
@@ -86,13 +86,19 @@
                 <input type="date" id="date" name="expiration">
             </p>
             <section>
+                <div id="ex1" class="modal">
+
+                    <a href="#" rel="modal:close">Close</a>
+                </div>
                 <p>
-                    <button type="submit">Validate the payment</button>
+                    <button type="submit"> Validate the payment</button>
                 </p>
             </section>
         </section>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="payment_scripts/formhandler.js" charset="utf-8"></script>
     <script src="payment_scripts/datastore.js" charset="utf-8"></script>
     <script src="payment_scripts/payment.js" charset="utf-8"></script>

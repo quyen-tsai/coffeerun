@@ -1,6 +1,7 @@
 (function (window) {
     'use strict';
     var FORM_SELECTOR = '[data-coffee-payment="form"]';
+    var MODAL_SELECTOR = '#ex1';
     var App = window.App;
     var Payment = App.Payment;
     var DataStore = App.DataStore;
@@ -13,6 +14,7 @@
         myPayment.createPayment(data);
         myPayment.printPayment(data);
         myPayment.processedPayment(data.username);
+        myPayment.openModal(MODAL_SELECTOR, data)
     });
     console.log(formHandler);
 })(window);

@@ -25,6 +25,14 @@
         }.bind(this));
     };
 
+    Payment.prototype.openModal = function (MODAL_SELECTOR, data) {
+        var title = data.title;
+        var name = data.username;
+        var str = "Thank you for your payment, " + title + " " + name + "!";
+
+        $(MODAL_SELECTOR).html(str);
+        $(MODAL_SELECTOR).modal('show');
+    };
 
     App.Payment = Payment;
     window.App = App;
